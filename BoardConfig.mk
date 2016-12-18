@@ -40,7 +40,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0E000000 --board LENNY3
-TARGET_PREBUILT_KERNEL := device/wiko/lenny3/kernel
+TARGET_PREBUILT_KERNEL := device/wiko/lenny3/prebuilt/kernel.opensource
 
 # Partition info
 TARGET_USERIMAGES_USE_EXT4 := true
