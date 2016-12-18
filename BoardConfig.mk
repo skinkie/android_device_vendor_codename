@@ -7,7 +7,7 @@ TARGET_BOARD_PLATFORM := mt6580
 TARGET_BOARD_PLATFORM_GPU :=
 
 # Architecture
-TARGET_ARCH := arch
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -36,7 +36,7 @@ TARGET_2ND_CPU_VARIANT :=
 # cmdline = bootopt=64S3,32S1,32S1
 
 # Kernel
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 # should androidboot.selinux=permissive be added?
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0E000000 --board LENNY3
